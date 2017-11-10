@@ -6,10 +6,11 @@
 <title>Reviews by Category</title>
 </head>
 <body>
-<H1 th:text="${category.category}"></H1>
+<h1 th:text="${category.category}"></h1>
 
-<h2 th:each="currentCategory: ${category.reviewsInCategory}">
-	 <a th:href="@{/review(id=${review.id})}" th:text="${currentCategory.title}"></a>
+<h2 th:each="currentReview: ${category.reviewsInCategory}">
+	 <a th:href="@{/review(id=${currentReview.id})}" th:text="${currentReview.title}"></a>
 </h2>
+<a href="http://localhost:8080/categories">Back to Categories</a>
 </body>
 </html>

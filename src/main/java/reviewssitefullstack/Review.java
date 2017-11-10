@@ -49,9 +49,4 @@ public class Review {
 		return description;
 	}
 
-	@Override
-	public String toString() {
-		return "Review [title=" + title + ", category=" + category + ", description=" + description + "]";
-	}
-
 }

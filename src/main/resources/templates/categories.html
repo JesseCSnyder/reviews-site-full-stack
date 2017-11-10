@@ -12,7 +12,7 @@
 		
 		<div class="categories">
 			<h2 th:each="category: ${categories}" class="categories">
-				<a th:href="@{/category(id=${category.id})}" th:text="${category.category}"></a>
+				<a th:href="@{/category(id=${category.Id})}" th:text="${category.category}"></a>
 			</h2>
 		</div>
 	

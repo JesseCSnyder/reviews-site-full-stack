@@ -6,10 +6,16 @@
 <title>Review</title>
 </head>
 <body>
-<p th:text="${review.review}"></p>
+<header>
+		<h1>Band Review</h1>
+</header>
 
-<div th:each="currentReview: ${category.reviewsInCategory}">
-	<p th:text="${currentReview.toString}"></p>
-</div>
+	<div>
+		<h2 th:text="${review.title}"></h2>
+		<h2 th:text="${review.category}"></h2>
+		<img th:src="${review.image}"></img>
+		<h2 th:text="${review.description}"></h2>
+		<a href="http://localhost:8080/categories">Back to Categories</a>
+	</div>
 </body>
 </html>
