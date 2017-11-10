@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Review</title>
+</head>
+<body>
+<p th:text="${review.review}"></p>
+
+<div th:each="currentReview: ${category.reviewsInCategory}">
+	<p th:text="${currentReview.toString}"></p>
+</div>
+</body>
+</html>
