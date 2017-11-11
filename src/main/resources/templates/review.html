@@ -1,21 +1,25 @@
 <!DOCTYPE HTML>
-
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
+<link rel="stylesheet" href="./style.css"></link>
+<link rel="stylesheet" href="./layout.css"></link>
 <title>Review</title>
 </head>
 <body>
-<header>
-		<h1>Band Review</h1>
-</header>
-
-	<div>
-		<h2 th:text="${review.title}"></h2>
-		<h2 th:text="${review.category}"></h2>
-		<img th:src="${review.image}"></img>
-		<h2 th:text="${review.description}"></h2>
-		<a href="http://localhost:8080/categories">Back to Categories</a>
+	<div class="container">
+		<header>
+			<h1>Band Review</h1>
+		</header>
+		<div id="review">
+			<h2 th:text="${review.title}"></h2>
+			<h2 th:text="${review.category}"></h2>
+			<img th:src="${review.image}"></img>
+			<h2 th:text="${review.description}"></h2>
+			<a id="back" href="http://localhost:8080/categories">Back to Categories</a>
+		</div>
+		<footer>
+			<h4> Lorem Ipsum Industries Inc.</h4>
+		</footer>
 	</div>
 </body>
 </html>

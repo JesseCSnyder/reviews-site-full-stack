@@ -1,16 +1,24 @@
 <!DOCTYPE HTML>
-
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
+<link rel="stylesheet" href="./style.css"></link>
+<link rel="stylesheet" href="./layout.css"></link>
 <title>Reviews by Category</title>
 </head>
 <body>
-<h1 th:text="${category.category}"></h1>
-
-<h2 th:each="currentReview: ${category.reviewsInCategory}">
-	 <a th:href="@{/review(id=${currentReview.id})}" th:text="${currentReview.title}"></a>
-</h2>
-<a href="http://localhost:8080/categories">Back to Categories</a>
+	<div class="container">
+		<header>
+			<h1 th:text="${category.category}"></h1>
+		</header>
+		<section id="review__list">
+			<h2 th:each="currentReview: ${category.reviewsInCategory}">
+	 			<a th:href="@{/review(id=${currentReview.id})}" th:text="${currentReview.title}"></a>
+			</h2>
+			<a id="back" href="http://localhost:8080/categories">Back to Categories</a>
+		</section>
+		<footer>
+			<h4> Lorem Ipsum Industries Inc.</h4>
+		</footer>
+	</div>
 </body>
 </html>
