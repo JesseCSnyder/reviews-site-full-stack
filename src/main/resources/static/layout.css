@@ -1,17 +1,17 @@
 #contact {
 	display: flex;
 	flex-direction: column;
-	align-content: space-around;
+	align-items: center;
 	justify-content: space-around;
 	max-width: 20%;
-	margin-bottom: 10%;
-	margin-top: 10%;
+	margin-bottom: 5%;
+	margin-top: 5%;
 }
 
 #news {
 	display: flex;
 	flex-direction: column;
-	align-content: space-around;
+	align-items: center;
 	justify-content: space-around;
 	max-width: 20%;
 	margin-bottom: 10%;
@@ -33,7 +33,7 @@
 .categories {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -57,5 +57,6 @@ footer {
 
 header {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
 }
