@@ -20,6 +20,10 @@ public class ReviewPopulator implements CommandLineRunner {
 		categoryRepo.save(japanesePunkRock);
 		Category electronic = new Category("Electronic");
 		categoryRepo.save(electronic);
+		Category surfRevival = new Category("90's Surf Revival");
+		categoryRepo.save(surfRevival);
+		Category postPunk = new Category("Post-Punk");
+		categoryRepo.save(postPunk);
 
 		Review guitarWolf = new Review("Guitar Wolf", japanesePunkRock, "/images/guitarwolf.jpg",
 				"Guitar Wolf is a Japanese garage rock power trio founded in Nagasaki in 1987. The band is known for songs with "
@@ -41,5 +45,18 @@ public class ReviewPopulator implements CommandLineRunner {
 		Review crystalCastles = new Review("Crystal Castles", electronic, "/images/crystalCastles.jpg", "Crystal Castles are a Canadian electronic music group formed in 2006 in Toronto, Ontario by founding members "
 				+ "songwriter/producer Ethan Kath and songwriter/vocalist Alice Glass. - Wikipedia");
 		reviewRepo.save(crystalCastles);
+		Review manOrAstroMan = new Review( "Man...Or Astroman?", surfRevival, "/images/manOrAstroMan.jpg", "Man or Astro-man? is a surf rock group that formed in Auburn, Alabama, in the early 1990s and came to prominence "
+				+ "over the following decade. - Wikipedia");
+		reviewRepo.save(manOrAstroMan);
+		Review phantomSurfers = new Review("The Phantom Surfers", surfRevival, "/images/phantomSurfers.jpg", "The Phantom Surfers are a surf rock band formed in 1988. - Wikipedia");
+		reviewRepo.save(phantomSurfers);
+		Review apeMen = new Review("The Ape Men", surfRevival, "/images/apeMen.jpg", "The Apemen is a Dutch surf rock band, comprising band-members from Tilburg and Rotterdam, with their base remaining in Tilburg. - Wikipedia");
+		reviewRepo.save(apeMen);
+		Review bauhaus = new Review("Bauhaus", postPunk, "/images/bauhaus.jpg", "Bauhaus were an English post-punk band, formed in Northampton, England in 1978. - Wikipedia");
+		reviewRepo.save(bauhaus);
+		Review minuteMen = new Review("The Minutemen", postPunk, "/images/minuteMen.jpg", "Minutemen were an American punk rock band formed in San Pedro, California in 1980. - Wikipedia");
+		reviewRepo.save(minuteMen);
+		Review devo = new Review("Devo", postPunk, "/images/devo.jpg", "Devo is an American rock band that formed in 1973, consisting of members from Kent and Akron, Ohio. - Wikipedia");
+		reviewRepo.save(devo);
 	}
 }

@@ -44,6 +44,12 @@
 
 a {
 	font-family: courier;
+	border-style: solid;
+	border-width: thin;
+	border-color: #0e0b16;
+	background-color: #0e0b16;
+	opacity: 0.5;
+	padding: 10px;
 }
 
 a:hover {
