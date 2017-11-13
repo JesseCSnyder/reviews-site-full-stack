@@ -23,8 +23,8 @@
 			<h2 th:text="${review.category}"></h2>
 			<img th:src="${review.image}"></img>
 			<h2 th:text="${review.description}"></h2>
-			<a id="back" href="http://localhost:8080/categories">Back to
-				Categories</a>
+			<a id="back" th:href="@{/category(id=${review.category.id})}">Back to
+				Category</a>
 		</div>
 		<footer>
 			<h4>Lorem Ipsum Industries Inc. Copyright 2017</h4>
